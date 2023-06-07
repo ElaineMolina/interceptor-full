@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router'
-
-import { Cliente } from '../cliente'
-import { ClientesService } from '../../clientes.service'
+import { ActivatedRoute, Params, Router } from '@angular/router'
 import { Observable } from 'rxjs';
+
+import { ClientesService } from '../../clientes.service'
+import { Cliente } from '../cliente'
 
 @Component({
   selector: 'app-clientes-form',
@@ -41,7 +41,7 @@ export class ClientesFormComponent implements OnInit {
   }
 
   voltarParaListagem(){
-    this.router.navigate(['/clientes/lista'])
+    this.router.navigate(['/clientes-lista']);
   }
 
   onSubmit(){
