@@ -9,6 +9,7 @@ import { ClientesService } from './clientes.service';
 import { ClientesModule } from './clientes/clientes.module';
 import { HomeComponent } from './home/home.component';
 import { TemplateModule } from './template/template.module';
+import { ServicoPrestadoService } from './servico-prestado.service';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TemplateModule } from './template/template.module';
     
   ],
   providers: [
-    ClientesService
+    ClientesService,
+    ServicoPrestadoService
   ],
   bootstrap: [AppComponent]
 })
