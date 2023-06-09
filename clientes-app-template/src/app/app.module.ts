@@ -22,7 +22,7 @@ import { TemplateModule } from './template/template.module';
     AppRoutingModule,
     TemplateModule,
     ClientesModule,
-    ServicoPrestadoModule
+    ServicoPrestadoModule,
     
   ],
   providers: [
